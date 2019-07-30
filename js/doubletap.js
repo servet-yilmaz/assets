@@ -1,0 +1,1 @@
+!function(t){t.fn.doubletap=t.fn.doubletap||function(n,u){u=null==u?300:u,this.bind("touchend",function(a){var l=(new Date).getTime(),o=l-(t(this).data("lastTouch")||l+1);o<u&&0<o?(t(this).data("lastTouch",null),null!==n&&"function"==typeof n&&n(a)):t(this).data("lastTouch",l)})}}(jQuery);
